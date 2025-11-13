@@ -33,7 +33,7 @@ print(f"Name: {user_profile['Name']}")
 print(f"Age: {user_profile['Age']}")
 print(f"Life Stage: {user_profile['Life Stage']}")
 
-if not user_profile['Favorite Hobbies']:
+if len(user_profile['Favorite Hobbies']) <= 0:
     print("You didn't mention any hobbies.")
 else:
     print(f"Favorite Hobbies ({len(user_profile['Favorite Hobbies'])}):")
